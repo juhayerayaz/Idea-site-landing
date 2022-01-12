@@ -1,6 +1,10 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 /* common style */
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #f3f1ff;
 }
@@ -17,6 +21,46 @@ main {
   border-radius: 5px;
   margin-top: 21px;
 }
+/* heading */
+header {
+  font-family: "Poppins", sans-serif;
+  height: 94px;
+  width: 100%;
+  background-color: #562eff;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-left: 36px;
+}
+.nav-bar img {
+  margin-left: 36px;
+  margin-top: 23px;
+  margin-right: 289px;
+  margin-bottom: 20px;
+}
+.idea {
+  display: flex;
+  align-items: center;
+}
+.idea h2 {
+  color: white;
+}
+.logo {
+  margin-left: 285px;
+  margin-right: 15px;
+  width: 40px;
+  height: 51px;
+}
+
 /* top players style  */
 .top-players {
   margin-bottom: 30px;
@@ -160,6 +204,15 @@ footer
  .............. */
 
 @media only screen and (max-width: 688px) {
+  .header {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 9px;
+  }
+  .nav-bar a {
+    margin-left: 18px;
+  }
   .container {
     width: 100%;
   }
@@ -184,6 +237,15 @@ footer
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 9px;
+  }
+  .nav-bar {
+    margin-left: 126px;
   }
   .players,
   .courses {
